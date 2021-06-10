@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.authors      = { 'Alejandro Isaza' => 'al@isaza.ca' }
   s.module_name  = 'WalletCore'
   
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
   s.osx.deployment_target = '10.12'
   s.swift_version = '5.1'
 
@@ -120,7 +120,7 @@ Pod::Spec.new do |s|
       "#{protobuf_source_dir}/src/google/protobuf/wire_format_lite.cc",
       "#{protobuf_source_dir}/src/google/protobuf/wrappers.pb.cc"
     ss.exclude_files = 
-      'trezor-crypto/include/TrezorCrypto/base58.h',
+      # 'trezor-crypto/include/TrezorCrypto/base58.h',
       'trezor-crypto/crypto/monero',
       'trezor-crypto/crypto/tests',
       'trezor-crypto/crypto/tools',
